@@ -9,7 +9,8 @@ export default function App() {
       <h1>Hello StackBlitz!</h1>
       <p>I am parent {value}</p>
       <p>
-        <Child name={setValue} />
+        {/* <Child name={setValue} /> */}
+        <Child />
       </p>
     </div>
   );

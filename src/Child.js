@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
-const Child = (props) => {
+import React, { useState, useContext } from 'react';
+import { GlobalData } from './Context';
+const Child = () => {
+  const { myId } = useContext(GlobalData);
   const [value, setValue] = useState('');
   const [valueA, setValueA] = useState('');
   const [addData, setData] = useState([]);
@@ -20,10 +22,9 @@ const Child = (props) => {
     console.log(id);
   };
   const addToCart = (e) => {
-    //e.preventDefault();
-    //let id = id + 1;
     SetmyCart(myCart + 1);
-    props.name(myCart);
+    //props.name(myCart);
+    myId.updateMyId = myCart;
     console.log('my cart number is ' + myCart);
   };
   return (
