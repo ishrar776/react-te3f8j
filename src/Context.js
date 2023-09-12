@@ -1,7 +1,7 @@
 import React, { createContext, useState } from 'react';
 const GlobalData = createContext({});
 const GlobalDataProvider = ({ children }) => {
-  const [value1, setValue] = useState({});
+  const [value1, setValue] = useState('');
   const updateMyId = (x) => {
     setValue(x);
     console.log('values from global1 object is' + value1);
