@@ -3,7 +3,7 @@ const Child = (props) => {
   const [value, setValue] = useState('');
   const [valueA, setValueA] = useState('');
   const [addData, setData] = useState([]);
-  let [myCart, SetmyCart] = useState(0);
+  let [myCart, SetmyCart] = useState(1);
   const dataAdd = (e) => {
     e.preventDefault();
     setData;
