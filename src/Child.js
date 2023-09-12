@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-const Child = () => {
+const Child = (props) => {
   const [value, setValue] = useState('');
   const [valueA, setValueA] = useState('');
   const [addData, setData] = useState([]);
@@ -23,6 +23,7 @@ const Child = () => {
     //e.preventDefault();
     //let id = id + 1;
     SetmyCart(myCart + 1);
+    props.name(myCart);
     console.log('my cart number is ' + myCart);
   };
   return (

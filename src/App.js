@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 import Child from './Child';
 
 export default function App() {
+  const [value, setValue] = useState('');
   return (
     <div>
       <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <p>I am parent {value}</p>
       <p>
-        <Child />
+        <Child name={setValue} />
       </p>
     </div>
   );
