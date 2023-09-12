@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { GlobalData } from './Context';
 const Child = () => {
-  const { myId } = useContext(GlobalData);
+  const { message, myId } = useContext(GlobalData);
   const [value, setValue] = useState('');
   const [valueA, setValueA] = useState('');
   const [addData, setData] = useState([]);
@@ -24,8 +24,10 @@ const Child = () => {
   const addToCart = (e) => {
     SetmyCart(myCart + 1);
     //props.name(myCart);
-    myId.updateMyId = 4;
-    console.log('my cart number is ' + myCart);
+    myId.updateMyId=myCart;
+    //console.log('my cart number is ' + myCart);
+    console.log('my global message is ' + message);
+    console.log('my global number is ' + myId.updateMyId);
   };
   return (
     <div>

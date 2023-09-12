@@ -3,7 +3,7 @@ import './style.css';
 import Child from './Child';
 import { GlobalData } from './Context';
 export default function App() {
-  const { myId, message } = useContext(GlobalData);
+  const { message ,myId} = useContext(GlobalData);
   const [value, setValue] = useState('');
   return (
     <div>

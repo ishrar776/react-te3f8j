@@ -2,19 +2,14 @@ import React, { createContext, useState } from 'react';
 const GlobalData = createContext({});
 const GlobalDataProvider = ({ children }) => {
   const [value1, setValue] = useState({});
-  const updateMyId = (item) => {
-    setValue(item);
+  const updateMyId = (x) => {
+    setValue(x);
+    console.log('values from global1 object is' + value1);
   };
-  console.log("values from global object is" + value1);
   const message = 'hey israr i am fine';
   return (
     <div>
-      <GlobalData.Provider
-        value={{
-          message,
-          myId: updateMyId,
-        }}
-      >
+      <GlobalData.Provider value={{ message, myId: updateMyId }}>
         {children}
       </GlobalData.Provider>
     </div>
