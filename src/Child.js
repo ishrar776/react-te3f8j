@@ -21,7 +21,7 @@ const Child = () => {
     console.log(addData);
     console.log(id);
   };
-  const addToCart = (e) => {
+  const addToCart = () => {
     SetmyCart(myCart + 1);
     //props.name(myCart);
     myId.updateMyId = myCart;

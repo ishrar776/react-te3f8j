@@ -7,7 +7,6 @@ export default function App() {
   return (
     <div>
       <h1>Hello</h1>
-      <p>I am parent</p>
       <p>
         <Child />
       </p>

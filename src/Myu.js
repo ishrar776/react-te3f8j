@@ -4,7 +4,7 @@ const Myu = () => {
   const { message, myId } = useContext(GlobalData);
   return (
     <div>
-      hey I am here {message}
+      I am Myu component
       {myId.updateMyId}
     </div>
   );
