@@ -24,7 +24,7 @@ const Child = () => {
   const addToCart = (e) => {
     SetmyCart(myCart + 1);
     //props.name(myCart);
-    myId.updateMyId = myCart;
+    myId.updateMyId = 4;
     console.log('my cart number is ' + myCart);
   };
   return (
