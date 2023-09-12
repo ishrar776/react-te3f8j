@@ -7,11 +7,9 @@ const GlobalDataProvider = ({ children }) => {
   };
   const message = 'hey israr i am fine';
   return (
-    <div>
-      <GlobalData.Provider value={{ message, myId: updateMyId }}>
-        {children}
-      </GlobalData.Provider>
-    </div>
+    <GlobalData.Provider value={{ message, myId: updateMyId }}>
+      {children}
+    </GlobalData.Provider>
   );
 };
 export default GlobalDataProvider;
