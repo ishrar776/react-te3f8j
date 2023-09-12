@@ -5,7 +5,7 @@ const GlobalDataProvider = ({ children }) => {
   const updateMyId = (x) => {
     setValue(x);
   };
-  const message = 'hey israr i am fine';
+  const message = 'hey israr i am fine11';
   return (
     <GlobalData.Provider value={{ message, myId: updateMyId }}>
       {children}
