@@ -4,7 +4,9 @@ import Child from './Child';
 import Myu from './Myu';
 import { GlobalData } from './Context';
 import GlobalDataProvider from './Context';
+//import { GlobalData } from './Context';
 export default function App() {
+  //const { message, myId } = useContext(GlobalData);
   return (
     <div>
       <h1>Hello</h1>
@@ -12,9 +14,7 @@ export default function App() {
         <p>
           <Child />
         </p>
-        <p>
-          <Myu />
-        </p>
+        <p><Myu /></p>
       </GlobalDataProvider>
     </div>
   );

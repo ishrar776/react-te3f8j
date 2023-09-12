@@ -12,8 +12,10 @@ const Myu = () => {
   return (
     <div>
       I am Myu component
-      <p>{message}</p>
-      {display}
+      {
+        myId.updateMyId && <p>{message}</p>
+        // {display}
+      }
     </div>
   );
 };
