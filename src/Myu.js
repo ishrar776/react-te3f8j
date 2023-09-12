@@ -2,11 +2,14 @@ import React, { useState, useContext, useEffect } from 'react';
 import { GlobalData } from './Context';
 const Myu = () => {
   const { message, myId } = useContext(GlobalData);
-  const displayMsg = myId.updateMyId;
+  const [display, setDisplay] = useState(myId.updateMyId);
+  useEffect(() => {
+    //setDisplay(myId.updateMyId);
+  }, []);
   return (
     <div>
-      I am Myu component
-      {displayMsg}
+      <p>{message}</p>I am Myu component
+      {display}
     </div>
   );
 };

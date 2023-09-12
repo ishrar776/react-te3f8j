@@ -3,8 +3,7 @@ const GlobalData = createContext({});
 const GlobalDataProvider = ({ children }) => {
   const [value1, setValue] = useState(4);
   const updateMyId = (x) => {
-    setValue(x);
-    //console.log('values from global1 object is' + value1);
+    setValue(x);    
   };
   const message = 'hey israr i am fine';
   return (
