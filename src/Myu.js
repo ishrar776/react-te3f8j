@@ -2,9 +2,9 @@ import React, { useState, useContext, useEffect } from 'react';
 import { GlobalData } from './Context';
 const Myu = () => {
   const { message, myId } = useContext(GlobalData);
-  const [display, setDisplay] = useState(myId.updateMyId);
+  const [display, setDisplay] = useState(0);
   useEffect(() => {
-    //setDisplay(myId.updateMyId);
+    setDisplay(myId.updateMyId);
   }, []);
   return (
     <div>

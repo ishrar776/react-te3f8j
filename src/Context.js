@@ -3,7 +3,7 @@ const GlobalData = createContext({});
 const GlobalDataProvider = ({ children }) => {
   const [value1, setValue] = useState(4);
   const updateMyId = (x) => {
-    setValue(x);    
+    setValue(x);
   };
   const message = 'hey israr i am fine';
   return (

@@ -5,7 +5,7 @@ const Child = () => {
   const [value, setValue] = useState('');
   const [valueA, setValueA] = useState('');
   const [addData, setData] = useState([]);
-  let [myCart, SetmyCart] = useState(1);
+  const [myCart, setmyCart] = useState(0);
   const dataAdd = (e) => {
     e.preventDefault();
     setData;
@@ -22,7 +22,7 @@ const Child = () => {
     console.log(id);
   };
   const addToCart = () => {
-    SetmyCart(myCart + 1);
+    setmyCart(myCart + 1);
     //props.name(myCart);
     myId.updateMyId = myCart;
     console.log('my global message is ' + message);
