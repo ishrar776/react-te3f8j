@@ -25,7 +25,6 @@ const Child = () => {
     setmyCart(myCart + 1);
     const checkValue = myId1(myCart);
     console.log('my global message is ' + message);
-    console.log('my global number is ' + checkValue);
   };
   return (
     <div>

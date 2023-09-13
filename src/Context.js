@@ -5,9 +5,7 @@ const GlobalDataProvider = ({ children }) => {
   const myId1 = (x) => {
     setValue(x);
   };
-  //const myId = {};
   const message = 'hey israr i am fine11';
-  //console.log('shared variable' + myId.updateMyId2);
   return (
     <GlobalData.Provider value={{ message, myId, myId1 }}>
       {children}
