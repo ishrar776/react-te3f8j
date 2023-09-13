@@ -1,7 +1,7 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { GlobalData } from './Context';
 const Myu = () => {
-  const { message, myId } = useContext(GlobalData);
+  const { message, myId, myId1 } = useContext(GlobalData);
   //const [display, setDisplay] = useState(0);
   // useEffect(() => {
   //   setTimeout(() => {
@@ -13,7 +13,7 @@ const Myu = () => {
     <div>
       I am Myu component
       <p>{message}</p>
-      {myId.updateMyId2}
+      {myId}
     </div>
   );
 };

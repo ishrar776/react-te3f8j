@@ -1,7 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { GlobalData } from './Context';
 const Child = () => {
-  const { message, myId1 } = useContext(GlobalData);
+  const {message, myId, myId1 } = useContext(GlobalData);
   const [value, setValue] = useState('');
   const [valueA, setValueA] = useState('');
   const [addData, setData] = useState([]);
