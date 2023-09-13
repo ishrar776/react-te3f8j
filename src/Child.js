@@ -23,12 +23,9 @@ const Child = () => {
   };
   const addToCart = () => {
     setmyCart(myCart + 1);
-    //props.name(myCart);
-    //myId.updateMyId2 = myCart;
     myId1(myCart);
-    //myId.updateMyId(myCart);
     console.log('my global message is ' + message);
-    console.log('my global number is ' + myId1);
+    console.log('my global number is ' + myId1(myCart));
   };
   return (
     <div>
