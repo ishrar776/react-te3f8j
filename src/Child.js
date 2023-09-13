@@ -27,7 +27,7 @@ const Child = () => {
     myId.updateMyId2 = myCart;
     //myId.updateMyId(myCart);
     console.log('my global message is ' + message);
-    console.log('my global number is ' + myId.updateMyId);
+    console.log('my global number is ' + myId.updateMyId2);
   };
   return (
     <div>
