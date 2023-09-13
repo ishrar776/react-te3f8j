@@ -1,14 +1,8 @@
 import React, { useState, useContext, useEffect } from 'react';
 import { GlobalData } from './Context';
 const Myu = () => {
-  const { message, myId, myId1 } = useContext(GlobalData);
-  //const [display, setDisplay] = useState(0);
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setDisplay(myId.updateMyId);
-  //   }, 300);
-  //   //setDisplay(myId.updateMyId);
-  // }, [myId.updateMyId]);
+  //const { message, myId, myId1 } = useContext(GlobalData);
+  const { message, myId } = useContext(GlobalData);
   return (
     <div>
       I am Myu component
