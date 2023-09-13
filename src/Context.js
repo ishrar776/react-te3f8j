@@ -7,9 +7,9 @@ const GlobalDataProvider = ({ children }) => {
   };
   //const myId = {};
   const message = 'hey israr i am fine11';
-  console.log('shared variable' + myId.updateMyId2);
+  //console.log('shared variable' + myId.updateMyId2);
   return (
-    <GlobalData.Provider value={{ message, myId:updateMyId }}>
+    <GlobalData.Provider value={{ message, myId, myId1: updateMyId }}>
       {children}
     </GlobalData.Provider>
   );
