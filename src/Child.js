@@ -25,7 +25,7 @@ const Child = () => {
     setmyCart(myCart + 1);
     //props.name(myCart);
     //myId.updateMyId2 = myCart;
-    myId.updateMyId2 = 4;
+    myId.updateMyId2 = myCart;
     //myId.updateMyId(myCart);
     console.log('my global message is ' + message);
     console.log('my global number is ' + myId.updateMyId2);
